@@ -181,26 +181,32 @@
   padding: 25px;
 }
 
-.card__contrast { 
+.card__contrast {
   filter: contrast(0.8); 
 }
-.card__grayscale { 
+
+.card__grayscale {
   filter: grayscale(0.8); }
 .card__invert { filter: invert(0.7); 
 }
-.card__saturate { 
+
+.card__saturate {
   filter: saturate(400%); 
 }
-.card__blur { 
+
+.card__blur {
   filter: blur(0.1rem); 
 }
-.card__hue { 
+
+.card__hue {
   filter: hue-rotate(45deg); 
 }
-.card__multiple-filter { 
+
+.card__multiple-filter {
   filter: sepia(0.7) hue-rotate(18deg) saturate(150%); 
 }
-.card__sepia { 
+
+.card__sepia {
   filter: sepia(0.7); 
 }
 
