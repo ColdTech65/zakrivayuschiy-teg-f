@@ -182,32 +182,35 @@
 }
 
 .card__contrast {
-  filter: contrast(0.8); 
+  filter: contrast(0.8);
 }
 
 .card__grayscale {
-  filter: grayscale(0.8); }
-.card__invert { filter: invert(0.7); 
+  filter: grayscale(0.8);
+}
+
+.card__invert { 
+  filter: invert(0.7);
 }
 
 .card__saturate {
-  filter: saturate(400%); 
+  filter: saturate(400%);
 }
 
 .card__blur {
-  filter: blur(0.1rem); 
+  filter: blur(0.1rem);
 }
 
 .card__hue {
-  filter: hue-rotate(45deg); 
+  filter: hue-rotate(45deg);
 }
 
 .card__multiple-filter {
-  filter: sepia(0.7) hue-rotate(18deg) saturate(150%); 
+  filter: sepia(0.7) hue-rotate(18deg) saturate(150%);
 }
 
 .card__sepia {
-  filter: sepia(0.7); 
+  filter: sepia(0.7);
 }
 
 .card__label {
@@ -240,7 +243,7 @@
 
 .card__icon-button {
   background: none;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   max-block-size: 38px;
   padding: 0;
@@ -252,6 +255,7 @@
 }
 
 .card__icon-button:focus-visible {
+  outline: none;
   border: 2px solid var(--accent-color, #000000);
   transition: border 0.3s ease-in-out;
 }
@@ -262,7 +266,7 @@
   color: var(--accent-color, #000000);
   cursor: pointer;
   font-family: var(--accent-font-family, sans-serif);
-  padding: 9px 17px;
+  padding: 8px 17px;
   position: relative;
 }
 
@@ -307,7 +311,8 @@
 
 .card__like-button {
   text-align: center;
-  width: 130px;
+  min-width: 130px;
+  min-height: 38px;
 }
 
 .save-button {
@@ -386,8 +391,6 @@ dialog[open] {
 }
 
 @media (width <= 376px) {
-
-
   .dialog {
     margin: auto 17px;
     padding: 30px 40px;
@@ -410,13 +413,19 @@ dialog[open] {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    height: 80px;
+    height: 84px;
     justify-content: center;
     width: 306px;
   }
 
+  .save-icon {
+    height: 28px;
+    width: 28px;
+  }
+
   .section__title {
     padding: 4px 10px 6px 10px;
+    line-height: normal;
   }
 
   .main {
