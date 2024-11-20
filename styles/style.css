@@ -189,7 +189,7 @@
   filter: grayscale(0.8);
 }
 
-.card__invert { 
+.card__invert {
   filter: invert(0.7);
 }
 
