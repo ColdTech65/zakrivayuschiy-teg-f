@@ -147,6 +147,7 @@
   gap: 50px;
   margin: 0 auto;
   max-width: 696px;
+  justify-content: center;
 }
 
 .section {
@@ -160,8 +161,8 @@
 .section__title {
   font-size: var(--main-font-size, 18px);
   font-variation-settings: "wght" var(--title-font-weight, 700);
-  padding: 3px 10px;
-  line-height: 25px;
+  padding: 5px 10px;
+  line-height: 21px;
 }
 
 .card {
@@ -184,7 +185,7 @@
   font-size: var(--main-font-size, 18px);
   gap: 27px;
   padding: 25px;
-  line-height: normal;
+  line-height: 21px;
 }
 
 .card__contrast {
@@ -397,6 +398,11 @@ dialog[open] {
 }
 
 @media (width <= 376px) {
+
+  .card__content {
+    padding: 27px 25px 25px 25px;
+  }
+
   .dialog {
     margin: auto 17px;
     padding: 30px 40px;
@@ -430,8 +436,7 @@ dialog[open] {
   }
 
   .section__title {
-    padding: 4px 10px 6px 10px;
-    line-height: normal;
+    padding: 3px 10px 5px 10px;
   }
 
   .main {
