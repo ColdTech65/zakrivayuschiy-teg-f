@@ -110,6 +110,8 @@
   content: "▶";
   opacity: 0.6;
   position: absolute;
+  inset-inline-start: -20px;
+  inset-block-start: 0;
 }
 
 .theme-menu__button:hover,
@@ -142,7 +144,7 @@
 
 .main {
   display: grid;
-  gap: 54px;
+  gap: 50px;
   margin: 0 auto;
   max-width: 696px;
 }
@@ -150,13 +152,16 @@
 .section {
   background-color: var(--bg-color, #ffffff);
   border: 2px solid var(--accent-color, #000000);
+  display: flex;
+  flex-direction: column;
+  width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
 }
 
 .section__title {
   font-size: var(--main-font-size, 18px);
   font-variation-settings: "wght" var(--title-font-weight, 700);
   padding: 3px 10px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .card {
@@ -179,6 +184,7 @@
   font-size: var(--main-font-size, 18px);
   gap: 27px;
   padding: 25px;
+  line-height: normal;
 }
 
 .card__contrast {
